@@ -2,14 +2,12 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import HeroContactFrom from '../HeroContactFrom'
 
 import './style.css'
 
 import hero1 from '../../images/slider/2.jpg'
 import hero2 from '../../images/slider/1.jpg'
 import hero3 from '../../images/slider/3.jpg'
-import { Link } from "react-router-dom";
 
 
 
@@ -26,10 +24,6 @@ class Hero extends Component {
             autoplaySpeed: 2500,
             fade: true
         };
-
-        const ClickHandler = () =>{
-            window.scrollTo(10, 0);
-         }
 
         return (
             <section className={`hero hero-slider-wrapper hx-hero-style-1 ${this.props.heroClass}`}>
