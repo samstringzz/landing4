@@ -1,0 +1,151 @@
+.hx-newsletter-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hx-newsletter-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="newsletter-pattern" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23newsletter-pattern)"/></svg>');
+    opacity: 0.3;
+}
+
+.hx-newsletter-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hx-newsletter-icon {
+    margin-bottom: 20px;
+}
+
+.hx-newsletter-icon i {
+    font-size: 60px;
+    color: #ff6b6b;
+}
+
+.hx-newsletter-content h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hx-newsletter-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+}
+
+.hx-newsletter-form {
+    max-width: 500px;
+    margin: 0 auto 50px auto;
+}
+
+.hx-form-group {
+    display: flex;
+    background: white;
+    border-radius: 50px;
+    padding: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.hx-form-group input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #333;
+}
+
+.hx-form-group input::placeholder {
+    color: #999;
+}
+
+.hx-newsletter-btn {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.hx-newsletter-btn:hover {
+    background: #ff5252;
+    transform: translateY(-2px);
+}
+
+.hx-success-message {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hx-success-message i {
+    font-size: 50px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.hx-success-message p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.hx-newsletter-benefits {
+    margin-top: 50px;
+}
+
+.hx-benefit-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.hx-benefit-item i {
+    font-size: 30px;
+    color: #ff6b6b;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.hx-benefit-item span {
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .hx-newsletter-content h2 {
+        font-size: 32px;
+    }
+    
+    .hx-newsletter-content p {
+        font-size: 16px;
+    }
+    
+    .hx-form-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .hx-form-group input,
+    .hx-newsletter-btn {
+        border-radius: 25px;
+    }
+}

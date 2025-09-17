@@ -1,0 +1,83 @@
+.hx-tagline-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    position: relative;
+    overflow: hidden;
+}
+
+.hx-tagline-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hx-tagline-title {
+    margin-bottom: 30px;
+}
+
+.tagline-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #8b5cf6;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.tagline-main {
+    font-size: 32px;
+    font-weight: 600;
+    color: #ff6b35;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.content-hub {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.hx-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #333;
+    color: white;
+}
+
+.social-icon i {
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .hx-tagline-content h2 {
+        font-size: 32px;
+    }
+    
+    .hx-tagline-content p {
+        font-size: 16px;
+    }
+    
+    .hx-stat-item h3 {
+        font-size: 28px;
+    }
+}

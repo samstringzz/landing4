@@ -1,0 +1,135 @@
+.hx-products-section {
+    background-color: #ffffff;
+}
+
+.hx-product-item {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+.hx-product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.hx-product-img {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.hx-product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.hx-product-item:hover .hx-product-img img {
+    transform: scale(1.1);
+}
+
+.hx-product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hx-product-item:hover .hx-product-overlay {
+    opacity: 1;
+}
+
+.hx-product-btn {
+    background: #ff6b6b;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.hx-product-btn:hover {
+    background: #ff5252;
+    transform: translateY(-2px);
+    color: white;
+    text-decoration: none;
+}
+
+.hx-product-content {
+    padding: 25px;
+}
+
+.hx-product-content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.hx-product-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.hx-product-features {
+    margin-bottom: 20px;
+}
+
+.hx-feature-tag {
+    display: inline-block;
+    background: #f8f9fa;
+    color: #666;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.hx-product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.hx-product-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ff6b6b;
+}
+
+.hx-product-order {
+    background: #ff6b6b;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.hx-product-order:hover {
+    background: #ff5252;
+    transform: translateY(-2px);
+    color: white;
+    text-decoration: none;
+}

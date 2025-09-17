@@ -1,0 +1,111 @@
+.hx-events-section {
+    background-color: #ffffff;
+}
+
+.hx-event-item {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.hx-event-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.hx-event-img {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.hx-event-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.hx-event-item:hover .hx-event-img img {
+    transform: scale(1.1);
+}
+
+.hx-event-date {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #ff6b6b;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 60px;
+}
+
+.hx-event-date .day {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.hx-event-date .month {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hx-event-content {
+    padding: 30px;
+}
+
+.hx-event-content h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.hx-event-meta {
+    margin-bottom: 15px;
+}
+
+.hx-event-meta span {
+    display: block;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.hx-event-meta i {
+    margin-right: 8px;
+    color: #ff6b6b;
+}
+
+.hx-event-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.hx-event-btn {
+    display: inline-block;
+    background: #ff6b6b;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.hx-event-btn:hover {
+    background: #ff5252;
+    transform: translateY(-2px);
+    color: white;
+    text-decoration: none;
+}
