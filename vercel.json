@@ -24,10 +24,5 @@
       "NODE_OPTIONS": "--openssl-legacy-provider",
       "GENERATE_SOURCEMAP": "false"
     }
-  },
-  "functions": {
-    "app/api/**/*.js": {
-      "runtime": "nodejs18.x"
-    }
   }
 }
