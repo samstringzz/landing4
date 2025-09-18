@@ -32,7 +32,7 @@
   "scripts": {
     "start": "set NODE_OPTIONS=--openssl-legacy-provider && set GENERATE_SOURCEMAP=false && react-scripts start",
     "build": "set NODE_OPTIONS=--openssl-legacy-provider && set GENERATE_SOURCEMAP=false && react-scripts build",
-    "vercel-build": "NODE_OPTIONS=--openssl-legacy-provider GENERATE_SOURCEMAP=false react-scripts build",
+    "vercel-build": "cross-env NODE_OPTIONS=--openssl-legacy-provider GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -52,9 +52,10 @@
     ]
   },
   "devDependencies": {
+    "cross-env": "^10.0.0",
     "eslint": "^6.8.0"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": "18.20.4"
   }
 }

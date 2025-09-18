@@ -17,14 +17,20 @@
   ],
   "env": {
     "NODE_OPTIONS": "--openssl-legacy-provider",
-    "GENERATE_SOURCEMAP": "false"
+    "GENERATE_SOURCEMAP": "false",
+    "CI": "false",
+    "SKIP_PREFLIGHT_CHECK": "true"
   },
   "build": {
     "env": {
       "NODE_OPTIONS": "--openssl-legacy-provider",
-      "GENERATE_SOURCEMAP": "false"
+      "GENERATE_SOURCEMAP": "false",
+      "CI": "false",
+      "SKIP_PREFLIGHT_CHECK": "true"
     }
   },
-  "installCommand": "npm install",
-  "buildCommand": "npm run vercel-build"
+  "installCommand": "npm install --legacy-peer-deps",
+  "buildCommand": "npm run vercel-build",
+  "outputDirectory": "build",
+  "framework": "create-react-app"
 }
